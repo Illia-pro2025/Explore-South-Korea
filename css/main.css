@@ -35,8 +35,8 @@ ul {
 .landscape--montagne {
   padding-top: 40px;
   padding-bottom: 56px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#010a20), to(rgba(1, 10, 32, 0))), url(./../images/montagne.png);
-  background-image: linear-gradient(180deg, #010a20 0%, rgba(1, 10, 32, 0) 100%), url(./../images/montagne.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#010a20), to(rgba(1, 10, 32, 0))), url(../../images/montagne.png);
+  background-image: linear-gradient(180deg, #010a20 0%, rgba(1, 10, 32, 0) 100%), url(../../images/montagne.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,8 +59,8 @@ ul {
 }
 .landscape--plage {
   padding-bottom: 39px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#010a20), to(rgba(1, 10, 32, 0))), url(././../../images/plage.png);
-  background-image: linear-gradient(180deg, #010a20 0%, rgba(1, 10, 32, 0) 100%), url(././../../images/plage.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#010a20), to(rgba(1, 10, 32, 0))), url(../../images/plage.png);
+  background-image: linear-gradient(180deg, #010a20 0%, rgba(1, 10, 32, 0) 100%), url(../../images/plage.png);
   background-position: center;
   background-repeat: no-repeat;
 }
