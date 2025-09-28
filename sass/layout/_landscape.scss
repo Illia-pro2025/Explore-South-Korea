@@ -1,9 +1,13 @@
 .landscape {
+   @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
   &--montagne {
     padding-top: 40px;
     padding-bottom: 56px;
     background-image: linear-gradient(
-        180deg,
+        360deg,
         #010a20 0%,
         rgba(1, 10, 32, 0) 100%
       ),
@@ -11,10 +15,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media screen and (min-width: 768px) {
-      display: flex;
-      align-items: center;
-    }
     @media screen and (min-width: 1200px) {
       padding-top: 207px;
       padding-bottom: 97px;
@@ -30,11 +30,10 @@
       url(./../images/plage.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     @media screen and (min-width: 768px) {
       padding-top: 56px;
       padding-bottom: 0px;
-      display: flex;
-      align-items: center;
     }
     @media screen and (min-width: 1200px) {
       padding-top: 95px;
@@ -64,9 +63,9 @@
     font-size: 40px;
     line-height: 46px;
     letter-spacing: 0%;
-@media screen and (min-width: 768px) {
-    margin:33px 10px 1px;
-  }
+    @media screen and (min-width: 768px) {
+      margin: 33px 10px 1px;
+    }
     @media screen and (min-width: 1200px) {
       margin: 80px 80px 4px;
       font-size: 42px;
@@ -83,8 +82,8 @@
     line-height: 24px;
     letter-spacing: 0.5px;
     @media screen and (min-width: 768px) {
-    margin:33px 10px 1px;
-  }
+      margin: 33px 10px 1px;
+    }
     @media screen and (min-width: 1200px) {
       margin: 0px 80px 32px;
       font-size: 18px;
@@ -106,8 +105,8 @@
     padding: 22px;
     background-color: #dd2242;
     @media screen and (min-width: 768px) {
-    margin:33px 10px 1px;
-  }
+      margin: 33px 10px 1px;
+    }
     @media screen and (min-width: 1200px) {
       width: auto;
       margin: 0px 80px 80px;

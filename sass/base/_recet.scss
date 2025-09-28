@@ -1,10 +1,13 @@
-h1,h2,h3,h4,h5,h6,p,img,ul,li,form,label,input,a,section,body{
-    margin: 0;
-    padding: 0;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
