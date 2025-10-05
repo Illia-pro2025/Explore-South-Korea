@@ -1,0 +1,104 @@
+.header {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  z-index: 3;
+  top: 28px;
+  &__list {
+    display: none;
+    @media screen and (min-width: 768px) {
+      margin-top: 20px;
+      margin-left: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 64px;
+      margin-top: 20px;
+      margin-bottom: 25px;
+      gap: 62px;
+    }
+  }
+  &__link {
+    display: inline-block;
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__input {
+    color: #ffffff;
+    margin-left: 10px;
+    max-width: 135px;
+    padding: 10px 24px 10px 10px;
+    background-color: transparent;
+    outline: transparent;
+    border-color: transparent;
+    @media screen and (min-width: 375px) {
+    max-width: 200px;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: 1px solid #ffffff;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 700px;
+      padding: 15px 24px;
+      width: 300px;
+      &:hover,
+      &:focus,
+      &:active {
+        border-bottom: 1px solid #ffffff;
+      }
+    }
+  }
+  &__list--icon {
+    display: flex;
+    margin-top: 8;
+    gap: 29px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 10px;
+      gap: 40px;
+      justify-content: right;
+    }
+  }
+  &__button--icon {
+    background-color: transparent;
+    border: transparent;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+  }
+  &__burger--menu {
+    margin-top: 15px;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  &__search {
+    position: absolute;
+    right: 70px;
+    top: 15px;
+
+    @media screen and (min-width: 1200px) {
+      right: 85px;
+      top: 20px;
+    }
+  }
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}

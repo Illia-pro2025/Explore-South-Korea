@@ -13,8 +13,76 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="container--big header__container">
+        <nav class="header__nav">
+          <a href="./index.html" class="logo"
+            ><img class="logo--img" src="./images/logo.jpg" alt=""
+          /></a>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">destinations</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">experiences</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">about</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">gallery</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__list--icon">
+          <li class="header__item--icon">
+            <input class="header__input" type="text" />
+            <button class="header__button--icon" type="button">
+              <svg class="header__icon header__search">
+                <use href="./images/symbol-defs.svg#icon-search"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__item--icon">
+            <button class="header__button--icon" data-mob-open>
+              <svg class="header__icon header__burger--menu">
+                <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="mob container is-hidden" data-mob>
+        <button class="mob__button" data-mob-close>
+          <svg class="mob__icon--close">
+            <use href="./images/symbol-defs.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <nav class="mob__nav">
+          <ul class="mob__list">
+            <li class="mob__item">
+              <a class="mob__link" href="#">destinations</a>
+            </li>
+            <li class="mob__item">
+              <a class="mob__link" href="#">experiences</a>
+            </li>
+            <li class="mob__item">
+              <a class="mob__link" href="#">about</a>
+            </li>
+            <li class="mob__item">
+              <a class="mob__link" href="#">gallery</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
+      <section class="hero">
+        <div class="container--big">
+          <h1 class="hero__title">explore indonesia</h1>
+          <button class="hero__button">Start travelling</button>
+        </div>
+      </section>
       <section class="landscape--montagne">
         <div class="container landscape">
           <div class="landscape__galery__image">
@@ -168,5 +236,6 @@
       <section></section>
     </main>
     <footer></footer>
+    <script src="./mob.js"></script>
   </body>
 </html>

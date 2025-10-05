@@ -1,0 +1,53 @@
+.mob {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  &.is-hidden {
+    // display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+  &__link {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: black;
+  }
+}
+
+.mob__button {
+  background-color: transparent;
+  border: transparent;
+}
+.mob__icon--close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 18px;
+  width: 18px;
+  fill: black;
+}

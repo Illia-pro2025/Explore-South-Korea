@@ -1,0 +1,30 @@
+.hero {
+  padding-top: 266px;
+  padding-bottom: 450px;
+  background-image: url(../../images/busan-south-korea.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.hero__title {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 130px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero__button {
+  background-color: #dd2242;
+  padding: 26px 64px;
+  color: #ffffff;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
