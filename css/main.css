@@ -860,13 +860,13 @@ ul {
 }
 
 .gallery {
-  padding-top: 32px;
-  padding-bottom: 40px;
+  margin-top: 32px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 1200px) {
   .gallery {
-    padding-top: 177px;
-    padding-bottom: 229px;
+    margin-top: 177px;
+    margin-bottom: 229px;
   }
 }
 .gallery__title {
