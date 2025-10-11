@@ -13,6 +13,31 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <div class="mob is-hidden" data-mob>
+      <div class="container--big">
+        <button class="mob__button" data-mob-close>
+          <svg class="mob__icon--close">
+            <use href="./images/symbol-defs.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <nav class="mob__nav">
+          <ul class="mob__list">
+            <li class="mob__item">
+              <a class="mob__link" href="#">destinations</a>
+            </li>
+            <li class="mob__item">
+              <a class="mob__link" href="#">experiences</a>
+            </li>
+            <li class="mob__item">
+              <a class="mob__link" href="#">about</a>
+            </li>
+            <li class="mob__item">
+              <a class="mob__link" href="#">gallery</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <header class="header">
       <div class="container--big header__container">
         <nav class="header__nav">
@@ -52,31 +77,6 @@
           </li>
         </ul>
       </div>
-      <div class="mob is-hidden" data-mob>
-        <div class="container">
-          <button class="mob__button" data-mob-close>
-            <svg class="mob__icon--close">
-              <use href="./images/symbol-defs.svg#icon-Vector"></use>
-            </svg>
-          </button>
-          <nav class="mob__nav">
-            <ul class="mob__list">
-              <li class="mob__item">
-                <a class="mob__link" href="#">destinations</a>
-              </li>
-              <li class="mob__item">
-                <a class="mob__link" href="#">experiences</a>
-              </li>
-              <li class="mob__item">
-                <a class="mob__link" href="#">about</a>
-              </li>
-              <li class="mob__item">
-                <a class="mob__link" href="#">gallery</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
     </header>
     <main>
       <section class="hero">
@@ -86,37 +86,55 @@
             south korea
           </h1>
           <button class="hero__button">Start travelling</button>
-          <ul class="hero__list">
-            <li class="hero__item">
-              <h5 class="hero__number">01</h5>
-              <h4 class="hero__subtitle">Title here</h4>
-              <p class="hero__text">
-                Lorem ipsum dolor sit <br />
-                amet et amet ist ame.
-              </p>
-            </li>
-            <li class="hero__item">
-              <h5 class="hero__number">02</h5>
-              <h4 class="hero__subtitle">Title here</h4>
-              <p class="hero__text">
-                Lorem ipsum dolor sit <br />
-                amet et amet ist ame.
-              </p>
-            </li>
-            <li class="hero__item">
-              <h5 class="hero__number">03</h5>
-              <h4 class="hero__subtitle">Title here</h4>
-              <p class="hero__text">
-                Lorem ipsum dolor sit <br />
-                amet et amet ist ame.
-              </p>
-            </li>
-          </ul>
-          <iframe
-            class="hero__video"
-            src="./video/hero.mp4"
-            frameborder="0"
-          ></iframe>
+          <div class="hero__container">
+            <div class="hero__container--nav">
+              <ul class="hero__list--nav">
+                <li class="hero__item--nav">
+                  <a href="#" class="hero__link">Fb</a>
+                </li>
+                <li class="hero__item--nav">
+                  <a href="#" class="hero__link">In</a>
+                </li>
+                <li class="hero__item--nav">
+                  <a href="#" class="hero__link">Tw</a>
+                </li>
+              </ul>
+              <p class="hero__number--nav">01</p>
+            </div>
+            <div class="hero__container--list">
+              <ul class="hero__list">
+                <li class="hero__item">
+                  <h5 class="hero__number">01</h5>
+                  <h4 class="hero__subtitle">Title here</h4>
+                  <p class="hero__text">
+                    Lorem ipsum dolor sit <br />
+                    amet et amet ist ame.
+                  </p>
+                </li>
+                <li class="hero__item">
+                  <h5 class="hero__number">02</h5>
+                  <h4 class="hero__subtitle">Title here</h4>
+                  <p class="hero__text">
+                    Lorem ipsum dolor sit <br />
+                    amet et amet ist ame.
+                  </p>
+                </li>
+                <li class="hero__item">
+                  <h5 class="hero__number">03</h5>
+                  <h4 class="hero__subtitle">Title here</h4>
+                  <p class="hero__text">
+                    Lorem ipsum dolor sit <br />
+                    amet et amet ist ame.
+                  </p>
+                </li>
+              </ul>
+              <iframe
+                class="hero__video"
+                src="./video/hero.mp4"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </section>
       <section class="landscape--montagne">

@@ -6,106 +6,185 @@
   background-position: center;
   background-size: cover;
   position: relative;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     padding-top: 266px;
-    padding-bottom: 216px;
+    padding-bottom: 450px;
   }
-}
-.hero__title {
-  font-family: "Roboto";
-  font-weight: 900;
-  font-size: 58.15px;
-  line-height: 63px;
-  letter-spacing: 0%;
-  text-transform: uppercase;
-  color: #ffffff;
-  @media screen and (min-width: 1200px) {
-    font-size: 120px;
-    line-height: 130px;
-    margin-left: 250px;
+  &__title {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 58.15px;
+    line-height: 63px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #ffffff;
+    @media screen and (min-width: 1200px) {
+      font-size: 120px;
+      line-height: 130px;
+      margin-left: 250px;
+    }
+    &__button {
+      background-color: #dd2242;
+      min-width: 100%;
+      padding: 21px;
+      margin-top: 8px;
+      color: #ffffff;
+      font-family: "DM Sans";
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: center;
+      vertical-align: middle;
+      border: transparent;
+      border-radius: 107px;
+      @media screen and (min-width: 1200px) {
+        font-size: 20px;
+        text-align: left;
+        border-radius: 211px;
+        padding: 26px 64px;
+        min-width: auto;
+        margin-top: 21px;
+        margin-left: 250px;
+      }
+    }
   }
-}
-.hero__button {
-  background-color: #dd2242;
-  min-width: 100%;
-  padding: 21px;
-  margin-top: 8px;
-  color: #ffffff;
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: center;
-  vertical-align: middle;
-  border: transparent;
-  border-radius: 107px;
-  @media screen and (min-width: 1200px) {
-    font-size: 20px;
-    text-align: left;
-    border-radius: 211px;
-    padding: 26px 64px;
-    min-width: auto;
-    margin-top: 21px;
-    margin-left: 250px;
+  &__container {
+    display: flex;
+    &--list {
+      margin: 0 auto;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      @media screen and (min-width: 1440px) {
+        position: absolute;
+        justify-content: none;
+        flex-wrap: nowrap;
+        right: 0;
+        align-items: flex-end;
+      }
+      @media screen and (min-width: 1810px) {
+        right: 50%;
+        transform: translateX(57%);
+        bottom: 0;
+        margin-top: 241px;
+      }
+    }
+    &--nav {
+      display: none;
+      @media screen and (min-width: 1810px) {
+        position: absolute;
+        left: 50%;
+        transform: translateY(-4500%);
+        bottom: 420px;
+        rotate: 270deg;
+        gap: 239px;
+        display: flex;
+      }
+    }
   }
-}
-.hero__list {
-  padding: 35px 71px 30px 32px;
-  margin-top: 54px;
-  background-color: #000000;
-  opacity: 60%;
-  border: 1px solid hsl(0, 0%, 0%);
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  @media screen and (min-width: 1200px) {
-    padding: 40px 128px 50px 71px;
-    margin-left: 250px;
-    margin-top: 241px;
-    flex-direction: row;
-    gap: 198px;
+  &__list--nav {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: inline-flex;
+      max-height: 31px;
+      gap: 25px;
+    }
   }
-}
+  &__link {
+    display: inline-block;
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #dd2242;
+    box-shadow: 0px 0px 4px 0px #0000001a;
+  }
+  &__number--nav {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    color: #dd2242;
+    &::after {
+      content: "";
+      width: 396px;
+      height: 2px;
+      display: block;
+      background-color: #dd2242;
+    }
+  }
+  &__list {
+    padding: 35px 71px 30px 32px;
+    margin-top: 54px;
+    background-color: #0000009a;
+    border: 1px solid hsl(0, 0%, 0%);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    @media screen and (min-width: 1200px) {
+      padding: 40px 128px 50px 71px;
+      flex-direction: row;
+      min-height: 210px;
+      gap: 198px;
+    }
+  }
+  &__item {
+    min-width: 120px;
+    @media screen and (min-width: 1200px) {
+      max-width: 50%;
+    }
+  }
 
-.hero__number {
-  font-family: "Roboto";
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-transform: uppercase;
-  color: #dd2242;
-  margin-bottom: 4px;
-}
-.hero__subtitle {
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 26.41px;
-  line-height: 41.08px;
-  letter-spacing: 0px;
-  color: #ffffff;
-  margin-bottom: 4px;
-}
-.hero__text {
-  font-family: "DM Sans";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #939393;
-  @media screen and (min-width: 1200px) {
-    font-size: 18px;
-    line-height: 28px;
+  &__number {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #dd2242;
+    margin-bottom: 4px;
   }
-}
-.hero__video {
-  min-width: 100%;
-  @media screen and (min-width: 1200px) {
-    min-width: 417px;
-    min-height: 234px;
-    position: relative;
-    top: -234px;
-    right: -1370px;
+  &__subtitle {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 26.41px;
+    line-height: 41.08px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+  &__text {
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #939393;
+    @media screen and (min-width: 1200px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  &__video {
+    min-width: 100%;
+    @media screen and (min-width: 768px) {
+      min-width: 50%;
+      max-height: 180px;
+    }
+    @media screen and (min-width: 1200px) {
+      min-width: 417px;
+      max-width: 417px;
+      min-height: 234px;
+      max-height: 234px;
+    }
   }
 }
