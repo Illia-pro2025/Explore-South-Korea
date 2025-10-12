@@ -1,0 +1,98 @@
+.footer {
+  background-color: #010a20;
+  padding-top: 146px;
+  padding-bottom: 83px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 39px;
+    padding-bottom: 30px;
+    }
+  &__container {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &--nav {
+      @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+      }
+
+      @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+        align-items: center;
+        gap: 124px;
+      }
+    }
+  }
+  &__nav {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 36px;
+    }
+  }
+  &__link--nav {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 22.94px;
+    line-height: 35.69px;
+    letter-spacing: 0.64px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-top: 36px;
+    @media screen and (min-width: 768px) {
+      margin-top: 0px;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+    }
+  }
+  &__container--list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+    }
+  }
+  &__list {
+    margin-top: 36px;
+    justify-content: center;
+    display: flex;
+    gap: 48px;
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+       align-items: center;
+      margin-top: 0px;
+      gap: 22px;
+    }
+  }
+  &__link {
+    display: block;
+  }
+  &__icon {
+    display: block;
+    width: 31px;
+    height: 31px;
+    fill: #fff;
+  }
+  &__text {
+    margin-top: 36px;
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 23.24px;
+    line-height: 36.15px;
+    letter-spacing: 0.65px;
+    text-align: center;
+    color: #fff;
+    @media screen and (min-width: 1200px) {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+      margin-top: 0px;
+    }
+  }
+}

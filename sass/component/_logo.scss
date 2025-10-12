@@ -10,3 +10,22 @@
     height: 68px;
   }
 }
+.logo--footer {
+  margin: 0 auto;
+  display: block;
+   width:auto;
+    height: 60px;
+    @media screen and (min-width: 768px) {
+    margin: 0px ;
+  }
+}
+.logo--img--footer {
+  display: block;
+  margin: 0 auto;
+      width:auto;
+    height: 60px;
+  @media screen and (min-width: 1200px) {
+    width:auto;
+    height: 68px;
+  }
+}

@@ -13,7 +13,7 @@
   &__nav {
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-content: flex-start;
   }
   &__list {
     display: none;
@@ -22,6 +22,7 @@
       margin-left: 20px;
       display: flex;
       gap: 10px;
+      align-items: center;
     }
     @media screen and (min-width: 1200px) {
       margin-left: 64px;
@@ -72,7 +73,7 @@
     margin-top: 8;
     gap: 29px;
     @media screen and (min-width: 1200px) {
-      margin-top: 10px;
+      margin-top: 0px;
       gap: 40px;
       justify-content: right;
     }
