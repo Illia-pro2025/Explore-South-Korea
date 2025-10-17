@@ -1,0 +1,70 @@
+.commande {
+  background-image: url(./../images/commande-fon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 171px;
+  padding-bottom: 116px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 249px;
+    padding-bottom: 256px;
+  }
+  &__title {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+
+    @media screen and (min-width: 768px) {
+      font-size: 42px;
+      line-height: 50px;
+    }
+  }
+  &__text {
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #6f7787;
+    margin-top: 36px;
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      line-height: 28px;
+      margin-top: 32px;
+    }
+  }
+  &__button {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #dd2242;
+    border: transparent;
+    min-width: 100%;
+    border-radius: 122px;
+    padding: 23px 108px;
+    margin-top: 41px;
+    display: block;
+    @media screen and (min-width: 1200px) {
+      padding: 18px 56px;
+      margin: 0 auto;
+      min-width: 0%;
+      margin-top: 36px;
+    }
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: #dd2242;
+      border: 1px solid #dd2242;
+    }
+  }
+}
