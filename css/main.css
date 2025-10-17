@@ -1013,7 +1013,7 @@ ul {
 }
 
 .commande {
-  background-image: url(./../images/commande-fon.jpg);
+  background-image: url(../../images/commande-fon.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
