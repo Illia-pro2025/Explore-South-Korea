@@ -16,6 +16,7 @@
       width: 575px;
       height: 3px;
       rotate: 90deg;
+      display: block;
       background-color: grey;
       position: absolute;
       left: -21%;
@@ -49,7 +50,7 @@
       display: block;
       border-radius: 50%;
       background-color: #dd2242;
-      padding: 9px 23px;
+      padding: 9px 20px;
       font-family: "DM Sans";
       font-weight: 500;
       font-size: 26.41px;
@@ -58,28 +59,6 @@
       text-align: center;
       margin: 0 auto;
       color: #fff;
-    }
-    @media screen and (min-width: 768px) {
-      display: flex;
-      align-items: flex-start;
-      gap: 44px;
-      &:nth-child(1)::before {
-        content: "1";
-        width: 56px;
-        height: 56px;
-        display: block;
-        border-radius: 50%;
-        background-color: #dd2242;
-        padding: 9px 23px;
-        font-family: "DM Sans";
-        font-weight: 500;
-        font-size: 26.41px;
-        line-height: 38.15px;
-        letter-spacing: 0px;
-        text-align: left;
-        margin: 0px;
-        color: #fff;
-      }
     }
     &:nth-child(2)::before {
       content: "2";
@@ -94,12 +73,12 @@
       font-size: 26.41px;
       line-height: 38.15px;
       letter-spacing: 0px;
-      text-align: left;
-      margin: 0px;
+      text-align: center;
+      margin: 0 auto;
       color: #fff;
     }
     &:nth-child(3) {
-      margin-left: 102px;
+      margin-left: 0px;
     }
     &:nth-child(4)::before {
       content: "3";
@@ -114,9 +93,33 @@
       font-size: 26.41px;
       line-height: 38.15px;
       letter-spacing: 0px;
-      text-align: left;
-      margin: 0px;
+      text-align: center;
+      margin: 0 auto;
       color: #fff;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: flex-start;
+      gap: 44px;
+      &:nth-child(1)::before {
+        text-align: left;
+        margin: 0px;
+        padding: 9px 20px;
+      }
+
+      &:nth-child(2)::before {
+        text-align: left;
+        margin: 0px;
+        padding: 9px 20px;
+      }
+      &:nth-child(3) {
+        margin-left: 102px;
+      }
+      &:nth-child(4)::before {
+        text-align: left;
+        margin: 0px;
+        padding: 9px 20px;
+      }
     }
   }
   &__subtitle {
