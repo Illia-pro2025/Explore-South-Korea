@@ -18,7 +18,6 @@ ul {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  outline: 1px solid rgb(60, 0, 255);
   width: 100%;
 }
 @media screen and (min-width: 375px) {
@@ -40,7 +39,6 @@ ul {
 .container--big {
   margin: 0 auto;
   padding: 0 15px;
-  outline: 4px solid rgb(169, 240, 16);
   width: 100%;
 }
 @media screen and (min-width: 375px) {
