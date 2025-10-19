@@ -168,7 +168,7 @@ ul {
   padding: 10px 24px 10px 10px;
   background-color: transparent;
   outline: transparent;
-  border-color: 1px transparent;
+  border-color: transparent;
 }
 @media screen and (min-width: 375px) {
   .header__input {
@@ -1254,24 +1254,6 @@ ul {
   position: relative;
   z-index: 20;
 }
-.etape__line {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .etape__line {
-    width: 575px;
-    height: 3px;
-    rotate: 90deg;
-    display: block;
-    background-color: grey;
-    position: absolute;
-    left: -21%;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
-    top: 140px;
-    z-index: -10;
-  }
-}
 .etape__title {
   font-family: "DM Sans";
   font-weight: 700;
@@ -1391,6 +1373,11 @@ ul {
     line-height: 41.08px;
     letter-spacing: 0px;
     margin-top: 0px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .etape__subtitle {
     text-align: left;
   }
 }
@@ -1409,7 +1396,24 @@ ul {
     font-size: 23.47px;
     line-height: 38.15px;
     letter-spacing: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .etape__text {
+    display: none;
+  }
+}
+.etape__text--desktop {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .etape__text--desktop {
+    font-size: 23.47px;
+    line-height: 38.15px;
+    letter-spacing: 0px;
     text-align: left;
+    display: block;
+    color: rgba(21, 20, 57, 0.4);
   }
 }
 .etape__video {
