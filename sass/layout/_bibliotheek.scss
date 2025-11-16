@@ -52,7 +52,13 @@
       }
     }
   }
-
+  &__item--gallery {
+    display: none;
+    &.active {
+      display: block;
+      text-align: center;
+    }
+  }
   &__image {
     width: 314px;
     height: 200px;
@@ -128,4 +134,11 @@
       margin-bottom: 18px;
     }
   }
+}
+.bibliotheek__item--gallery {
+  display: none;
+}
+.bibliotheek__item--gallery.active {
+  display: block;
+  text-align: center;
 }

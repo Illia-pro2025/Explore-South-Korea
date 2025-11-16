@@ -37,17 +37,16 @@
     text-transform: uppercase;
     color: black;
   }
-}
-
-.mob__button {
-  background-color: transparent;
-  border: transparent;
-}
-.mob__icon--close {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  height: 18px;
-  width: 18px;
-  fill: black;
+  &__button {
+    background-color: transparent;
+    border: transparent;
+  }
+  &__icon--close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 18px;
+    width: 18px;
+    fill: black;
+  }
 }

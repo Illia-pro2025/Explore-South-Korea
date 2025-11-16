@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="./images/favicon.jpg" />
+
+    <title>Explore-South-Korea</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +17,7 @@
   <body>
     <div class="mob is-hidden" data-mob>
       <div class="container--big">
-        <button class="mob__button" data-mob-close>
+        <button aria-label="Name" class="mob__button" data-mob-close>
           <svg class="mob__icon--close">
             <use href="./images/symbol-defs.svg#icon-Vector"></use>
           </svg>
@@ -23,16 +25,16 @@
         <nav class="mob__nav">
           <ul class="mob__list">
             <li class="mob__item">
-              <a class="mob__link" href="#">destinations</a>
+              <a aria-label="nav" class="mob__link" href="#">destinations</a>
             </li>
             <li class="mob__item">
-              <a class="mob__link" href="#">experiences</a>
+              <a aria-label="nav" class="mob__link" href="#">experiences</a>
             </li>
             <li class="mob__item">
-              <a class="mob__link" href="#">about</a>
+              <a aria-label="nav" class="mob__link" href="#">about</a>
             </li>
             <li class="mob__item">
-              <a class="mob__link" href="#">gallery</a>
+              <a aria-label="nav" class="mob__link" href="#">gallery</a>
             </li>
           </ul>
         </nav>
@@ -41,35 +43,49 @@
     <header class="header">
       <div class="container--big header__container">
         <nav class="header__nav">
-          <a href="./index.html" class="logo"
-            ><img class="logo--img" src="./images/logo.jpg" alt=""
+          <a aria-label="logo" href="./index.html" class="logo"
+            ><img class="logo--img" src="./images/logo.jpg" alt="logo"
           /></a>
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link" href="#">destinations</a>
+              <a aria-label="nav" class="header__link" href="#destinations"
+                >destinations</a
+              >
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">experiences</a>
+              <a aria-label="nav" class="header__link" href="#experiences"
+                >experiences</a
+              >
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">about</a>
+              <a aria-label="nav" class="header__link" href="#about">about</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">gallery</a>
+              <a aria-label="nav" class="header__link" href="#gallery"
+                >gallery</a
+              >
             </li>
           </ul>
         </nav>
         <ul class="header__list--icon">
           <li class="header__item--icon">
-            <input class="header__input" type="text" />
-            <button class="header__button--icon" type="button">
-              <svg class="header__icon header__search">
-                <use href="./images/symbol-defs.svg#icon-search"></use>
-              </svg>
-            </button>
+            <label for="search">
+              <input class="header__input" type="text" /><button
+                class="header__button--icon"
+                aria-label="Name"
+                type="button"
+              >
+                <svg class="header__icon header__search">
+                  <use href="./images/symbol-defs.svg#icon-search"></use>
+                </svg></button
+            ></label>
           </li>
           <li class="header__item--icon">
-            <button class="header__button--icon" data-mob-open>
+            <button
+              class="header__button--icon"
+              aria-label="Name"
+              data-mob-open
+            >
               <svg class="header__icon header__burger--menu">
                 <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
               </svg>
@@ -85,18 +101,20 @@
             explore <br />
             south korea
           </h1>
-          <button class="hero__button">Start travelling</button>
+          <button aria-label="Name" class="hero__button">
+            Start travelling
+          </button>
           <div class="hero__container">
             <div class="hero__container--nav">
               <ul class="hero__list--nav">
                 <li class="hero__item--nav">
-                  <a href="#" class="hero__link">Fb</a>
+                  <a aria-label="nav contact" href="#" class="hero__link">Fb</a>
                 </li>
                 <li class="hero__item--nav">
-                  <a href="#" class="hero__link">In</a>
+                  <a aria-label="nav contact" href="#" class="hero__link">In</a>
                 </li>
                 <li class="hero__item--nav">
-                  <a href="#" class="hero__link">Tw</a>
+                  <a aria-label="nav contact" href="#" class="hero__link">Tw</a>
                 </li>
               </ul>
               <p class="hero__number--nav">01</p>
@@ -104,7 +122,7 @@
             <div class="hero__container--list">
               <ul class="hero__list">
                 <li class="hero__item">
-                  <h5 class="hero__number">01</h5>
+                  <p class="hero__number">01</p>
                   <h4 class="hero__subtitle">Title here</h4>
                   <p class="hero__text">
                     Lorem ipsum dolor sit <br />
@@ -112,7 +130,7 @@
                   </p>
                 </li>
                 <li class="hero__item">
-                  <h5 class="hero__number">02</h5>
+                  <p class="hero__number">02</p>
                   <h4 class="hero__subtitle">Title here</h4>
                   <p class="hero__text">
                     Lorem ipsum dolor sit <br />
@@ -120,7 +138,7 @@
                   </p>
                 </li>
                 <li class="hero__item">
-                  <h5 class="hero__number">03</h5>
+                  <p class="hero__number">03</p>
                   <h4 class="hero__subtitle">Title here</h4>
                   <p class="hero__text">
                     Lorem ipsum dolor sit <br />
@@ -130,6 +148,7 @@
               </ul>
               <iframe
                 class="hero__video"
+                title="myFrame"
                 src="./video/hero.mp4"
                 frameborder="0"
               ></iframe>
@@ -137,7 +156,7 @@
           </div>
         </div>
       </section>
-      <section class="landscape--montagne">
+      <section id="about" class="landscape--montagne">
         <div class="container landscape">
           <div class="landscape__galery__image">
             <img
@@ -158,11 +177,13 @@
               <br class="landscape__interligne--desktob" />
               mollis rhoncus.
             </p>
-            <button type="button" class="landscape__button">Learn More</button>
+            <button aria-label="Name" type="button" class="landscape__button">
+              Learn More
+            </button>
           </div>
         </div>
       </section>
-      <section class="landscape--plage">
+      <section id="about" class="landscape--plage">
         <div class="container landscape">
           <div>
             <div class="landscape__galery__image landscape__mobil">
@@ -184,7 +205,9 @@
               <br class="landscape__interligne--desktob" />
               mollis rhoncus.
             </p>
-            <button type="button" class="landscape__button">Learn More</button>
+            <button aria-label="Name" type="button" class="landscape__button">
+              Learn More
+            </button>
           </div>
           <div class="landscape__galery__image landscape__desktob">
             <img
@@ -195,7 +218,7 @@
           </div>
         </div>
       </section>
-      <section class="bibliotheek">
+      <section id="experiences" class="bibliotheek">
         <div class="container bibliotheek--white">
           <h1 class="bibliotheek__title">Explore Our Secrets</h1>
           <ul class="bibliotheek__list--gallery">
@@ -206,11 +229,44 @@
                 class="bibliotheek__image"
               />
             </li>
+
+            <li class="bibliotheek__item--gallery">
+              <img
+                src="./images/montagne.jpg"
+                alt="montagne"
+                class="bibliotheek__image"
+              />
+            </li>
+            <li class="bibliotheek__item--gallery">
+              <img
+                src="./images/plage.jpg"
+                alt="plage"
+                class="bibliotheek__image"
+              />
+            </li>
           </ul>
           <ul class="bibliotheek__list--gallery--desktop">
-            <li><img src="./images/chemin.png" alt="chemin" class="bibliotheek__image"></li>
-            <li><img src="./images/montagne.jpg" alt="montagne" class="bibliotheek__image"></li>
-            <li><img src="./images/plage.jpg" alt="plage" class="bibliotheek__image"></li>
+            <li>
+              <img
+                src="./images/chemin.png"
+                alt="chemin"
+                class="bibliotheek__image"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/montagne.jpg"
+                alt="montagne"
+                class="bibliotheek__image"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/plage.jpg"
+                alt="plage"
+                class="bibliotheek__image"
+              />
+            </li>
           </ul>
         </div>
         <div class="container bibliotheek--black">
@@ -222,21 +278,21 @@
           </p>
           <ul class="bibliotheek__list">
             <li class="bibliotheek__item">
-              <h3 class="bibliotheek__subtitle">100+</h3>
+              <p class="bibliotheek__subtitle">100+</p>
               <p class="bibliotheek__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 commodo magna et libero.
               </p>
             </li>
             <li class="bibliotheek__item">
-              <h3 class="bibliotheek__subtitle">43,000+</h3>
+              <p class="bibliotheek__subtitle">43,000+</p>
               <p class="bibliotheek__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 commodo.
               </p>
             </li>
             <li class="bibliotheek__item">
-              <h3 class="bibliotheek__subtitle">30+</h3>
+              <p class="bibliotheek__subtitle">30+</p>
               <p class="bibliotheek__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 commodo magna et libero.
@@ -256,7 +312,9 @@
             elit. Fusce sit amet magna commodo, tempus dolor <br />
             sit amet, laoreet elit. Donec mauris tortor.
           </p>
-          <button type="button" class="commande__button">Learn More</button>
+          <button aria-label="Name" type="button" class="commande__button">
+            Learn More
+          </button>
         </div>
       </section>
       <section class="film">
@@ -266,6 +324,7 @@
             wouldn’t expect.
           </h3>
           <iframe
+            title="myFrame"
             class="film__video--big"
             src="./video/combo.mp4"
             frameborder="0"
@@ -273,6 +332,7 @@
           <ul class="film__list">
             <li class="film__item">
               <iframe
+                title="myFrame"
                 class="film__video"
                 src="./video/village.mp4"
                 frameborder="0"
@@ -287,6 +347,7 @@
             </li>
             <li class="film__item">
               <iframe
+                title="myFrame"
                 class="film__video film__video--invisibily"
                 src="./video/city.mp4"
                 frameborder="0"
@@ -299,6 +360,7 @@
                 </p>
               </div>
               <iframe
+                title="myFrame"
                 class="film__video film__video--tablet"
                 src="./video/city.mp4"
                 frameborder="0"
@@ -307,7 +369,7 @@
           </ul>
         </div>
       </section>
-      <section class="container gallery">
+      <section id="gallery" class="container gallery">
         <h2 class="gallery__title">Photo Gallery</h2>
         <p class="gallery__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -347,14 +409,14 @@
           </li>
         </ul>
       </section>
-      <section class="etape">
+      <section id="destinations" class="etape">
         <div class="etape__container container">
           <h1 class="etape__title">Getting there</h1>
           <div class="etape__line"></div>
           <ul class="etape__list">
             <li class="etape__item">
               <div>
-                <h4 class="etape__subtitle">Bookings your flights</h4>
+                <h3 class="etape__subtitle">Bookings your flights</h3>
                 <p class="etape__text">Lorem ipsum dolor sit...</p>
                 <p class="etape__text--desktop">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -363,12 +425,12 @@
                   faucibus malesuada. Praesent sed <br />eros tincidunt, viverra
                   neque auctor, lobortis enim.
                 </p>
-                <a href="#" class="etape__link">Show more</a>
+                <a aria-label="modal" href="#" class="etape__link">Show more</a>
               </div>
             </li>
             <li class="etape__item">
               <div>
-                <h4 class="etape__subtitle">Choosing your hotel</h4>
+                <h3 class="etape__subtitle">Choosing your hotel</h3>
                 <p class="etape__text">Lorem ipsum dolor sit...</p>
                 <p class="etape__text--desktop">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -382,12 +444,13 @@
             </li>
             <li class="etape__item">
               <iframe
+                title="myFrame"
                 class="etape__video"
                 src="./video/hero.mp4"
                 frameborder="0"
               ></iframe>
               <div>
-                <h4 class="etape__subtitle">Travelling there</h4>
+                <h3 class="etape__subtitle">Travelling there</h3>
                 <p class="etape__text">Lorem ipsum dolor sit...</p>
                 <p class="etape__text--desktop">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -396,7 +459,7 @@
                   faucibus malesuada. Praesent sed <br />eros tincidunt, viverra
                   neque auctor, lobortis enim.
                 </p>
-                <a href="#" class="etape__link">Show more</a>
+                <a aria-label="modal" href="#" class="etape__link">Show more</a>
               </div>
             </li>
             <li class="etape__item">
@@ -410,52 +473,60 @@
                   faucibus malesuada. Praesent sed <br />eros tincidunt, viverra
                   neque auctor, lobortis enim.
                 </p>
-                <a href="#" class="etape__link">Show more</a>
+                <a aria-label="modal" href="#" class="etape__link">Show more</a>
               </div>
             </li>
           </ul>
-          <button class="etape__button">Learn More</button>
+          <button aria-label="Name" class="etape__button">Learn More</button>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container--big footer__container">
         <div class="footer__container--nav">
-          <a class="logo--footer" href="#"
+          <a aria-label="logo" class="logo--footer" href="./index.html"
             ><img class="logo--img--footer" src="./images/logo.jpg" alt="logo"
           /></a>
           <ul class="footer__nav">
-            <li><a href="#" class="footer__link--nav">About</a></li>
-            <li><a href="#" class="footer__link--nav">Pricing</a></li>
-            <li><a href="#" class="footer__link--nav">Company</a></li>
-            <li><a href="#" class="footer__link--nav">Blog</a></li>
+            <li>
+              <a aria-label="nav" href="#" class="footer__link--nav">About</a>
+            </li>
+            <li>
+              <a aria-label="nav" href="#" class="footer__link--nav">Pricing</a>
+            </li>
+            <li>
+              <a aria-label="nav" href="#" class="footer__link--nav">Company</a>
+            </li>
+            <li>
+              <a aria-label="nav" href="#" class="footer__link--nav">Blog</a>
+            </li>
           </ul>
         </div>
         <div class="footer__container--list">
           <ul class="footer__list">
             <li>
-              <a href="#" class="footer__link">
+              <a aria-label="nav web site" href="#" class="footer__link">
                 <svg class="footer__icon">
                   <use href="./images/symbol-defs.svg#icon-google"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="footer__link"
+              <a aria-label="nav web site" href="#" class="footer__link"
                 ><svg class="footer__icon">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="footer__link">
+              <a aria-label="nav web site" href="#" class="footer__link">
                 <svg class="footer__icon">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          <p class="footer__text">Copyright © 2019</p>
+          <p class="footer__text">Copyright © 2025</p>
         </div>
       </div>
     </footer>
